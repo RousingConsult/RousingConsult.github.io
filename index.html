@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Consulting Business</title>
+    <title>Anders Rousing Consulting</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Your Consulting Business</h1>
-        <p>Helping businesses grow with expert consulting.</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AR Consulting</div>
+            <ul class="nav-links">
+                <li><a href="#hjem">Hjem</a></li>
+                <li><a href="#om">Om</a></li>
+                <li><a href="#services">Ydelser</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We provide professional consulting services to help businesses achieve their goals.</p>
+    <section id="hjem" class="hero">
+        <div class="hero-content">
+            <h1>Professionel Forretningsrådgivning</h1>
+            <p>Strategisk sparring og økonomisk rådgivning til virksomheder</p>
+            <a href="#kontakt" class="cta-button">Kontakt Os</a>
+        </div>
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Business Strategy</li>
-            <li>Financial Planning</li>
-            <li>Marketing Consultation</li>
-        </ul>
+    <section id="om" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <!-- Placeholder for consultant's photo -->
+                <div class="image-placeholder"></div>
+            </div>
+            <div class="about-text">
+                <h2>Om Os</h2>
+                <p>Med mange års erfaring inden for forretningsudvikling og økonomistyring, tilbyder vi professionel rådgivning til virksomheder, der ønsker at optimere deres forretning og nå deres mål.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="services" class="services">
+        <h2>Vores Ydelser</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Forretningsudvikling</h3>
+                <p>Strategisk planlægning og implementering af vækststrategier</p>
+            </div>
+            <div class="service-box">
+                <h3>Økonomistyring</h3>
+                <p>Optimering af interne processer og økonomiske analyser</p>
+            </div>
+            <div class="service-box">
+                <h3>Ledelsessparring</h3>
+                <p>Professionel sparring til ejere og ledere</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+        <h2>Kontakt Os</h2>
+        <div class="contact-container">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="navn" placeholder="Navn" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="besked" placeholder="Besked" required></textarea>
+                <button type="submit" class="submit-button">Send Besked</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Consulting Business. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>AR Consulting</h3>
+                <p>Email: kontakt@arconsulting.dk</p>
+                <p>Telefon: +45 XX XX XX XX</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anders-rousing-b090788/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
